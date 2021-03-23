@@ -1,0 +1,154 @@
+body{
+    background-color: #fff;
+}
+
+.authentication .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.auth{
+    height: 75vh;
+    background-color: #fff;
+    box-shadow: 0px 4px 24px #21252933;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.loginRegistration{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    
+}
+.loginRegistration.active{
+    top: -100%;
+    transition: 0.3s ease-in-out;
+}
+.login, .registration{
+    height: 100%;
+    overflow: hidden;
+}
+/* .login.active, .registration.active{
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+} */ 
+.leftCard{
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+}
+.logo img{
+    width: 10rem;
+}
+.contentCard h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contentCard hr{
+    width: 40%;
+    border-top: 4px solid #FFDB57;
+    margin-left: 0;
+}
+.contentCard p{
+    color: #495057;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.rightCard{
+    background: #F8F9FA 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4rem 6rem;
+    height: 100%;
+    position: relative;
+}
+.regiClose, .loginClose{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 1.8rem;
+    color: #6C757D;
+}
+.regiClose:hover .loginClose:hover{
+    color: #212529;
+}
+.form_custome{
+    width: 100%;
+}
+.login .form_custome .form-group{
+    margin-top: 2.25rem;
+}
+.registration .form_custome .form-group{
+    margin-top: 1rem;
+}
+.form_custome .btn-active{
+    background: #212529 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    width:100%;
+    color: #fff;
+    margin-top: 2.25rem;
+}
+.form_custome label{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.form-control{
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+.form-control:focus{
+    border: 1px solid #FFDB57;
+    box-shadow: none !important;
+}
+.form-control::placeholder{
+    font-size: 0.8rem;
+    color: #DEE2E6;
+}
+.linkRow{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkRow a, .password a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.linkRow a:hover, .password a:hover{
+    color: #212529;
+}
+.linkRow .activeLink{
+    color: #212529;    
+}
+
+
+@media only screen and (max-width: 600px) {
+.auth{
+    height: 100%;
+    margin-top: 3rem;
+}
+.leftCard{
+    padding: 2rem;
+}
+.rightCard{
+    padding: 2rem 2rem;
+}
+.authentication .container{
+    height: 120vh;
+    margin-bottom: 2rem;
+}
+}

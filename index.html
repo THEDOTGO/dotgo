@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>DotGo Login Page</title>
+</head>
+
+<body>
+    <section class="authentication">
+        <div class="container">
+            <div class="col-lg-10 auth">
+                <div class="loginRegistration">
+                    <div class="row login p-0">
+                        <div class="col-lg-5 leftCard">
+                            <div class="logo">
+                                <img src="assets/img/dotgo-logo.svg">
+                            </div>
+                            <div class="contentCard">
+                                <h1>Welcome back!</h1>
+                                <hr>
+                                <p>Log in to manage your<br>DotGo account.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 rightCard">
+                            <a href="#" class="loginClose"><i class="fas fa-times"></i></a>
+                            <div class="form_custome">
+                                <h3>Get Set, Go!</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="emailAddres">Email</label>
+                                        <input type="email" class="form-control" id="emailAddres" aria-describedby="emailHelp"
+                                            placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="d-flex justify-content-between password">
+                                            <div>Password</div>
+                                            <a href="#">Forgot Password ?</a>
+                                        </label>
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                    
+                                    <button type="submit" class="btn btn-active">Login</button>
+                    
+                                    <div class="linkRow">
+                                        <a href="#" class="activeLink">New to DotGo?</a>
+                                        <a href="#" class="deActiveLink createBtn">Create Account</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row registration p-0">
+                        <div class="col-lg-5 leftCard">
+                            <div class="logo">
+                                <img src="assets/img/dotgo-logo.svg">
+                            </div>
+                            <div class="contentCard">
+                                <h1>Get set, Go!</h1>
+                                <hr>
+                                <p>Create your account<br>to boost your business.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 rightCard">
+                            <a href="#" class="regiClose"><i class="fas fa-times"></i></a>
+                            <div class="form_custome">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                                            placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="d-flex justify-content-between password">
+                                            Email Address
+                                        </label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="d-flex justify-content-between password">
+                                            Password
+                                        </label>
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cfnpassword" class="d-flex justify-content-between password">
+                                            Confirm password
+                                        </label>
+                                        <input type="password" class="form-control" id="cfnpassword" placeholder="Confirm password">
+                                    </div>
+                    
+                                    <button type="submit" class="btn btn-active">Create Account</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(".createBtn").click(function () {
+                $(".loginRegistration").addClass("active");
+            });
+        $(".regiClose").click(function () {
+                $(".loginRegistration").removeClass("active");
+            });
+            
+    </script>
+</body>
+
+</html>
